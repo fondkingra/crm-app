@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-17 15:35:33.232267",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "dpp_id",
+  "purchase_order",
+  "product",
+  "vendor",
+  "blockchain_network",
+  "transaction_id",
+  "block_number",
+  "blockchain_hash",
+  "lifecycle_state",
+  "dpp_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "dpp_id",
+   "fieldtype": "Data",
+   "label": "DPP ID"
+  },
+  {
+   "fieldname": "purchase_order",
+   "fieldtype": "Link",
+   "label": "purchase_order",
+   "options": "Purchase order"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "label": "product",
+   "options": "Product"
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Link",
+   "label": "vendor",
+   "options": "vendor"
+  },
+  {
+   "fieldname": "blockchain_network",
+   "fieldtype": "Data",
+   "label": "Blockchain Network"
+  },
+  {
+   "fieldname": "transaction_id",
+   "fieldtype": "Data",
+   "label": "transaction_id"
+  },
+  {
+   "fieldname": "block_number",
+   "fieldtype": "Data",
+   "label": "block_number"
+  },
+  {
+   "fieldname": "blockchain_hash",
+   "fieldtype": "Data",
+   "label": "blockchain_hash"
+  },
+  {
+   "fieldname": "lifecycle_state",
+   "fieldtype": "Select",
+   "label": "lifecycle_state",
+   "options": "Draft\nCreated\nCommissioned\nShipped\nCancelled"
+  },
+  {
+   "fieldname": "dpp_status",
+   "fieldtype": "Select",
+   "label": "dpp_status",
+   "options": "Active\nInactive\nRevoked\nExpired"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-17 15:45:01.188309",
+ "modified_by": "Administrator",
+ "module": "FCRM",
+ "name": "Digital Product Passport",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

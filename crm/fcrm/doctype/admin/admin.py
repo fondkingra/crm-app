@@ -1,0 +1,27 @@
+# Copyright (c) 2026, Frappe Technologies Pvt. Ltd. and contributors
+# For license information, please see license.txt
+
+# import frappe
+from frappe.model.document import Document
+
+
+class Admin(Document):
+	# begin: auto-generated types
+	# This code is auto-generated. Do not modify anything in this block.
+
+	from typing import TYPE_CHECKING
+
+	if TYPE_CHECKING:
+		from frappe.types import DF
+
+		admin_code: DF.Data | None
+		admin_name: DF.Data | None
+		certificate_pem: DF.Password | None
+		contact_email: DF.Data | None
+		contact_phone: DF.Phone | None
+		msp_id: DF.Data | None
+		password: DF.Data | None
+		private_key: DF.Password | None
+		status: DF.Literal["Active", "Inactive"]
+	# end: auto-generated types
+	pass
